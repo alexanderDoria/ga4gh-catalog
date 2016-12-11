@@ -120,8 +120,9 @@ export class ListVariants extends Component {
         this.state.largestPage = this.state.currPage;
       }
       console.log("currPage ", this.state.currPage);
+      //console.log(pageTokens[0]);
       console.log("largest page ", this.state.largestPage);
-    if (!this.changedPageState() && this.changedParamsState()){
+    if (!this.changedPageState() && this.changedParamsState()){ //if search button is clicked with new params
       this.state.pageTokens = [null];
       this.state.largestPage = 0;
       this.state.currPage = 0;

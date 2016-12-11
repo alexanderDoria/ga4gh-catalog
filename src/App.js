@@ -26,7 +26,7 @@ export default class App extends Component {
   constructor() {
     super()
     this.state = {
-      baseurl: "http://localhost:8000/"
+      baseurl: "http://1kgenomes.ga4gh.org/"
     }
   }
   render() {

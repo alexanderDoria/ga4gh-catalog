@@ -66,7 +66,7 @@ export default class Container extends Component{
             <ListMetadata variantSetId={this.props.params.id} baseurl={this.props.route.baseurl} />
           </div>
           <div className="redContainer">
-            <SearchVariants id={this.props.routeParams.id} baseurl={this.props.route.baseurl} />
+            <SearchVariants baseurl={this.props.route.baseurl} />
           </div>
           <div className="blueContainer">
             <ListVariantAnnotationSets variantSetId={this.props.params.id} baseurl={this.props.route.baseurl} />
@@ -77,7 +77,6 @@ export default class Container extends Component{
     else if (this.props.route.container == "featuresets/"){
         this.loadFromServer();
         let data = this.state.data;
-        //console.log("data", data);
         return <div>
           <h3>featuresets/</h3>
           <div>{data.name} <span className="label label-primary">name</span> </div>

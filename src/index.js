@@ -19,7 +19,7 @@ import ListVariantSets from './ListVariantSets.js'
 import ListFeatureSets from './ListFeatureSets.js'
 import Variant from './Variant.js'
 
-let baseurl = "http://localhost:8000/"
+let baseurl = "http://1kgenomes.ga4gh.org/"
 
 ReactDOM.render(<Router history={browserHistory}>
     <Route path="/" component={App}>
